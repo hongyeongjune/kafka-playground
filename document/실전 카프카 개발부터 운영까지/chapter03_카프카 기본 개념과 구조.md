@@ -26,7 +26,7 @@
 * 카프카는 페이지 캐시를 이용한다.
 * 카프카는 성능 향상을 위해 OS 페이지 캐시를 활용하는 방식으로 설계되어있다.
 * 페이지 캐시는 직접 디스크를 읽고 쓰는 대신 물리 메모리 중 애플리케이션이 사용하지 않는 일부 잔여 메모리를 활용한다.
-* 자세한 내용 :
+* 자세한 내용 : https://github.com/hongyeongjune/kafka-playground/blob/main/document/pageCache.md
 
 ### 배치 전송 처리
 * 메시지를 쓰거나 읽을 때 개별 건마다 처리하지 않고 여러 건을 묶어서 일괄(batch) 처리하는 단순한 최적화를 통해 막대한 성능 개선 효과를 볼 수 있다.
@@ -73,7 +73,7 @@
   * auto.commit.enable = true
   * auto.commit.interval.ms = 5000 (주기)
 * 수동 커밋을 하면 AckMode 를 설정도 같이 해줘야한다.
-  * 자세한 내용 :
+  * 자세한 내용 : https://github.com/hongyeongjune/kafka-playground/blob/main/document/ackMode.md
 
 ### 컨슈머 그룹
 
